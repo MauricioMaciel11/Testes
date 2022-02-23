@@ -41,7 +41,7 @@ while j < 9:
     for L in range(0, 3):
         for C in range(0, 3):
             if C==0:
-                                if matriz[L][C] == matriz[L][C + 1] and matriz[L][C] == matriz[L][C + 2] and matriz[L][C] != ' ':
+                if matriz[L][C] == matriz[L][C + 1] and matriz[L][C] == matriz[L][C + 2] and matriz[L][C] != ' ':
                     print('Fim de jogo. O Jogador {} ganhou!'.format(matriz[linha][coluna]))
                     j = 9
                     break
