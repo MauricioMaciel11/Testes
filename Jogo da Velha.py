@@ -41,29 +41,29 @@ while j < 9:
     for L in range(0, 3):
         for C in range(0, 3):
             if C==0:
-                if matriz[L][C] == matriz[L][C + 1] and matriz[L][C] == matriz[L][C + 2] and matriz[L][C] != ' ':
-                    print('Fim de jogo. Você ganhou!1')
+                                if matriz[L][C] == matriz[L][C + 1] and matriz[L][C] == matriz[L][C + 2] and matriz[L][C] != ' ':
+                    print('Fim de jogo. O Jogador {} ganhou!'.format(matriz[linha][coluna]))
                     j = 9
                     break
                 elif L<1 and matriz[L][C] == matriz[L + 1][C] and matriz[L][C] == matriz[L + 2][C] and matriz[L][C] != ' ':
-                    print('Fim de jogo. Você ganhou!2')
+                    print('Fim de jogo. O Jogador {} ganhou!'.format(matriz[linha][coluna]))
                     j = 9
                     break
                 elif L<1 and matriz[L][C] == matriz[L + 1][C + 1] and matriz[L][C] == matriz[L + 2][C + 2] and matriz[L][C] != ' ':
-                    print('Fim de jogo. Você ganhou!3')
+                    print('Fim de jogo. O Jogador {} ganhou!'.format(matriz[linha][coluna]))
                     j = 9
                     break
                 elif L<1 and matriz[L][C] == matriz[L - 1][C + 2] and matriz[L][C] == matriz[L - 2][C + 2] and matriz[L][C] != ' ':
-                    print('Fim de jogo. Você ganhou!4')
+                    print('Fim de jogo. O Jogador {} ganhou!'.format(matriz[linha][coluna]))
                     j = 9
                     break
                 elif L==2 and matriz[L][C] == matriz[L - 1][C + 1] and matriz[L][C] == matriz[L - 2][C + 2] and matriz[L][C] != ' ':
-                    print('Fim de jogo. Você ganhou!5')
+                    print('Fim de jogo. O Jogador {} ganhou!'.format(matriz[linha][coluna]))
                     j = 9
                     break
             else:
                 if L<1 and matriz[L][C] == matriz[L+1][C] and matriz[L][C] == matriz[L+2][C] and matriz[L][C] != ' ':
-                    print('Fim de jogo. Você ganhou!6')
+                    print('Fim de jogo. O Jogador {} ganhou!'.format(matriz[linha][coluna]))
                     j = 9
                     break
 
